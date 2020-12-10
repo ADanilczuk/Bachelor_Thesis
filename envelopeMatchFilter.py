@@ -60,13 +60,13 @@ def pick_best_onset_in_epsilon(onsets, epsilon):
 
     for i in range(0, n):
         if i not in to_delete:
-            result.append(onsets[i])
+            result.append(onsets[i][0])
 
     return result
 
 if __name__ == "__main__":
     threshold = 5
-    # directory to the song
+    # song directory
     song =  "song.wav"
 
     input_signal, sr = librosa.load(song)
@@ -80,18 +80,19 @@ if __name__ == "__main__":
     onsets = pick_best_onset_in_epsilon(onsets, epsilon)
 
 
+
     print("onsety:")
     print(len(onsets))
     for i in range(0, len(onsets)):
-        print(onsets[i][0])
-        onsets[i][0] = onsets[i][0] / sr
-        print(onsets[i][0])
+        print(onsets[i])
+        onsets[i] = onsets[i] / sr
+        print(onsets[i])
 
 
     fig, ax = plt.subplots()
 
     for xc in onsets:
-        plt.axvline(x=xc[0], color='k')
+        plt.axvline(x=xc, color='k')
 
     ax.plot(time, input_signal)
     ax.set(xlabel='Time (s)', ylabel='Sound Amplitude')
