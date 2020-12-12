@@ -1,8 +1,11 @@
 from matplotlib import pyplot as plt
-
 import librosa
+
+import EnvelopeMatchFilter as enf
 import math
 import numpy as np
+import librosa as lba
+import scipy.io.wavfile as scp
 
 Onsets = []
 input_signal = None
@@ -37,10 +40,11 @@ def markOnsetsOnThePlot(name):
     # Save new song data to the file (we assume that if this function is ran this song is not yet in the dataset)
     with open('Onsets.txt', 'a') as file:
         file.write(name +',')
-        for i in range(len(Onsets)-2):
+        for i in range(len(Onsets)-1):
             file.write("%s," % Onsets[i])
-        print(Onsets[len(Onsets)-2])
-        file.write("%s;\n" % Onsets[len(Onsets)-2])
+        print(Onsets[len(Onsets)-1])
+        file.write("%s;\n" % Onsets[len(Onsets)-1])
     print(Onsets)
 
-markOnsetsOnThePlot("tamNaDnieS")
+if __name__ == "__main__":  
+    markOnsetsOnThePlot("piano3")
