@@ -14,6 +14,10 @@ epsilon = 4000
 sr = None
 
 
+A4 = 440
+C0 = A4*pow(2, -4.75)
+noteName = ['C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#', 'A', 'A#', 'B']    
+
 def find_fund_freqs(input_signal, onsets): #liczymy fund_freqs dla kazdego fragmentu (onsetu)
 
     fund_freqs = []
@@ -97,12 +101,6 @@ def fundamental_frequency(y_array, freqs): # szukamy czestotliwosc o najwiekszej
     # freq = ind / len(y_array) POWINNO BYC CHYBA ind * sample_rate / len(y_array), ale skad wziac sample_rate?!!
     # Moze sample rate to ten sr ktory dostalismy przy wczytywaniu nagrania z librosy...?
     return freq
-
-
-A4 = 440
-C0 = A4*pow(2, -4.75)
-# name = ["C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "A#", "B"]
-noteName = ['C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#', 'A', 'A#', 'B']    
 
 
 def pitch2Note(freq):
