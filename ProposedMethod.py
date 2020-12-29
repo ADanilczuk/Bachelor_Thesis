@@ -80,16 +80,21 @@ def calculatePitchExtraction(name):
         
         i += 1
     
-    print("Fundamental Frequencies", fundamentalFrequencies)
+    
     noteSet = []
     for n in fundamentalFrequencies:
         noteSet.append(pitch2Note(n))
-    print("noteSet",noteSet)
+    
 
-    sd.saveInTxt('freqs', name+'-A', fundamentalFrequencies, '\t')
+    # sd.saveInTxt('freqs', name+'-A', fundamentalFrequencies, '\t')
+    return (fundamentalFrequencies , noteSet)
 
-
-# calculatePitchExtraction('nucenie2')
-calculatePitchExtraction("piano3")
-# calculatePitchExtraction("piano1")
-# plt.show()
+if __name__ == "__main__": 
+    # calculatePitchExtraction('nucenie2')
+    (propsedFreqs, proposedNotes) = calculatePitchExtraction("kotek2")
+    print("Fundamental Frequencies", propsedFreqs)
+    print("noteSet", proposedNotes)
+    # calculatePitchExtraction("gdySlicznaPannaS2")
+    # calculatePitchExtraction("aaa1")
+    # calculatePitchExtraction("piano1")
+    # plt.show()
