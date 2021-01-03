@@ -42,28 +42,15 @@ def get_onsets_locations(threshold, energies, window_size):
 
     return onsets
 
-if __name__ == "__main__":
-    threshold = 0.2
-    # song directory
-    song =  "song.wav"
-
-    input_signal, sr = librosa.load(song)
-    print(len(input_signal))
-
-    window_size = 15000
-
-    energies = compute_energies(input_signal, window_size)
-
-    onsets = get_onsets_locations(threshold, energies, window_size)
-
+def plot_onsets(input_signal, sr, onsets):
     time = np.arange(0, len(input_signal)) / sr
-
-    print(window_size)
     print("onsety:")
     print(len(onsets))
     for i in range(0, len(onsets)):
         print(onsets[i])
         onsets[i] = onsets[i] / sr
+        print(onsets[i])
+
 
     fig, ax = plt.subplots()
 
@@ -75,7 +62,24 @@ if __name__ == "__main__":
 
     plt.show()
 
+def short_term_energy(query_name):
+    threshold = 0.2
+    song =  "/Users/klaudiuszek/Desktop/Licencjat/Data/" + query_name + ".wav"
 
+    input_signal, sr = librosa.load(song)
+    print(len(input_signal))
 
+    window_size = 7800
 
+    energies = compute_energies(input_signal, window_size)
 
+    onsets = get_onsets_locations(threshold, energies, window_size)
+
+    plot_onsets(input_signal, sr, onsets)
+
+    return onsets
+
+if __name__ == "__main__":
+    query_name = "wlazlKotekNucenie5s"
+
+    onsets = short_term_energy(query_name)

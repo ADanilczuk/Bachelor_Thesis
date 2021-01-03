@@ -64,22 +64,8 @@ def pick_best_onset_in_epsilon(onsets, epsilon):
 
     return result
 
-if __name__ == "__main__":
-    threshold = 5
-    # song directory
-    song =  "song.wav"
-
-    input_signal, sr = librosa.load(song)
-
-    window_size = 7800
-
-    onsets = get_onsets_locations(input_signal, window_size, threshold)
-
+def plot_onsets(input_signal, sr, onsets):
     time = np.arange(0, len(input_signal)) / sr
-
-    onsets = pick_best_onset_in_epsilon(onsets, epsilon)
-
-
 
     print("onsety:")
     print(len(onsets))
@@ -98,3 +84,26 @@ if __name__ == "__main__":
     ax.set(xlabel='Time (s)', ylabel='Sound Amplitude')
 
     plt.show()
+
+def envelope_match_filter(query_name):
+    threshold = 5
+    # directory to the query
+    song =  "/Users/klaudiuszek/Desktop/Licencjat/Data/" + query_name + ".wav"
+
+    input_signal, sr = librosa.load(song)
+
+    window_size = 7800
+
+    onsets = get_onsets_locations(input_signal, window_size, threshold)
+
+    onsets = pick_best_onset_in_epsilon(onsets, epsilon)
+
+    plot_onsets(input_signal, sr, onsets)
+
+    return onsets
+
+
+if __name__ == "__main__":
+    query_name = "wlazlKotekNucenie5s"
+
+    onsets = envelope_match_filter(query_name)
