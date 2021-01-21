@@ -4,6 +4,29 @@ import KlaudiaPitch
 import tryCepstralMethod
 import time
 from collections import Counter
+from math import log2, pow
+import re 
+
+A4 = 440
+C0 = A4*pow(2, -4.75)
+noteName = ['C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#', 'A', 'A#', 'B']
+
+def pitch2Note(freq):
+    h = round(12*log2(freq/C0))
+    octave = h // 12
+    n = h % 12
+    return noteName[n] + str(octave)
+
+
+def note2Pitch(note): 
+    temp = re.compile("([a-zA-Z]?#?)([0-9]+)") 
+    res = temp.match(note).groups() 
+    nt = res[0]
+    octave = int(res[1])
+    idx = noteName.index(res[0])
+    idx = idx + 4 + ((octave - 1) * 12); 
+
+    return round((A4 * 2** ((idx- 49) / 12)),2)
 
 def mesureTimeAndExecute(function, *args):
     tic = time.perf_counter()
@@ -37,30 +60,42 @@ def comparePitchResults(name, version):
 
 def chooseNotes(name):
     
-    (_, proposedNotes) = ProposedMethod.calculatePitchExtraction(name)
-    (_, KlaudiaNotes) = KlaudiaPitch.calculatePitchExtraction(name)
-    (_, CepstralNotes) = tryCepstralMethod.calculatePitchExtraction(name,1)
-    (_, CepstralNotes2) = tryCepstralMethod.calculatePitchExtraction(name,2)
+    (propsedFreqs, proposedNotes) = ProposedMethod.calculatePitchExtraction(name)
+    (KlaudiaFreqs, KlaudiaNotes) =  KlaudiaPitch.calculatePitchExtraction(name)
+    (CepstralFreqs, CepstralNotes) = tryCepstralMethod.calculatePitchExtraction(name,1)
+    (CepstralFreqs2, CepstralNotes2) = tryCepstralMethod.calculatePitchExtraction(name,2)
 
-    prefered = KlaudiaNotes
+    preferedFreqs = KlaudiaFreqs
+    preferedNotes = KlaudiaNotes
     
     notes = []
-    voter = None
+    freqs = []
     for i in range(len(CepstralNotes)):
-        noteCandidates = [CepstralNotes[i], CepstralNotes2[i], proposedNotes[i], KlaudiaNotes[i]]
-        b = Counter(noteCandidates)
+        # nC- noteCandidates
+        nC = [CepstralNotes[i], CepstralNotes2[i], proposedNotes[i], KlaudiaNotes[i]]
+        b = Counter(nC)
         n = max(b)
-        if b[n] == 1: n = prefered[i]
-        elif (b[n] == 2 and b[prefered[i]] == 2 ):  n = prefered[i]
+        if b[n] == 1: 
+            n = preferedNotes[i] 
+        elif (b[n] == 2 and b[preferedNotes[i]] == 2 ):  
+            n = preferedNotes[i]
+
+        if (preferedNotes[i] == n): f = preferedFreqs[i]
+        else:  j=3
         notes.append(n)
-    return notes
+        freqs.append(note2Pitch(n))  
+
+    return (freqs,notes)
 
 
 if __name__ == "__main__": 
     name = "gdySlicznaPannaH2"
    
-    # comparePitchResults(name, 1)
-    print(chooseNotes(name))
+    (freqs, notes) = chooseNotes(name)
+    print("freqs", freqs)
+    print("notes", notes)
+    # print(chooseNotes(name))
+
   
     
     
