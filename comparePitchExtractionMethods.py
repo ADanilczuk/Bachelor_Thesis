@@ -80,8 +80,6 @@ def chooseNotes(name):
         elif (b[n] == 2 and b[preferedNotes[i]] == 2 ):  
             n = preferedNotes[i]
 
-        if (preferedNotes[i] == n): f = preferedFreqs[i]
-        else:  j=3
         notes.append(n)
         freqs.append(note2Pitch(n))  
 
