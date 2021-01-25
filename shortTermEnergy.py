@@ -2,26 +2,27 @@ import librosa
 import numpy as np
 import matplotlib.pyplot as plt
 import librosa.display
+from pylab import rcParams
 
-gap = 1800
-epsilon = 4000
+epsilon = 6000
+rcParams['figure.figsize'] = 10, 7
 
 def kth_energy(k, input_signal, window_size):
     start = (k * window_size)
     if start < 0:
         start = 0
-
+    
     end = (k + 1) * window_size
     if end > len(input_signal):
         end = len(input_signal)
-
+    
     if end < start or end < 0:
         return 0
-
+    
     result = 0
     for i in range(start, end):
         result += input_signal[i] * input_signal[i]
-
+    
     return result
 
 def compute_energies(input_signal, window_size):
@@ -30,7 +31,7 @@ def compute_energies(input_signal, window_size):
     while (k+1)*window_size - 1 < len(input_signal):
         energies.append(kth_energy(k, input_signal, window_size))
         k += 1
-
+    
     return energies
 
 def get_onsets_locations(threshold, energies, window_size):
@@ -42,44 +43,64 @@ def get_onsets_locations(threshold, energies, window_size):
 
     return onsets
 
+def pick_best_onset_in_epsilon(onsets, epsilon):
+    n = len(onsets)
+    result = []
+    to_delete = set()
+    for i in range(0, n):
+        for j in range(0, n):
+            if abs(onsets[i] - onsets[j])  > epsilon or i == j:
+                continue
+            if(onsets[i] > onsets[j]):
+                to_delete.add(i)
+            else:
+                to_delete.add(j)
+
+    for i in range(0, n):
+        if i not in to_delete:
+            result.append(onsets[i])
+        
+    return result
+
 def plot_onsets(input_signal, sr, onsets):
     time = np.arange(0, len(input_signal)) / sr
-    print("onsety:")
-    print(len(onsets))
+    
     for i in range(0, len(onsets)):
         print(onsets[i])
         onsets[i] = onsets[i] / sr
-        print(onsets[i])
-
-
+    
     fig, ax = plt.subplots()
-
-    for xc in onsets:
-        plt.axvline(x=xc, color='k')
-
-    ax.plot(time, input_signal)
-    ax.set(xlabel='Time (s)', ylabel='Sound Amplitude')
-
+    minVal = min(input_signal)
+    maxVal = max(input_signal)
+    ax.plot(time, input_signal, zorder = 1)
+    ax.set(xlabel='Czas [s]', ylabel='Amplituda')
+    ax.vlines(onsets, minVal, maxVal, lw=0.75, color='black', alpha=0.8, label = 'początek dźwięku', zorder=2)
+    ax.legend()
+    #plt.savefig('ShortTermEnergy_KawalekPodlogiK_w1500_t3_e5500.png')
     plt.show()
 
+
+
 def short_term_energy(query_name):
-    threshold = 0.2
+    threshold = 0.05
     song =  "/Users/klaudiuszek/Desktop/Licencjat/Data/" + query_name + ".wav"
 
     input_signal, sr = librosa.load(song)
     print(len(input_signal))
 
-    window_size = 7800
-
+    window_size = 1500
+   
     energies = compute_energies(input_signal, window_size)
 
     onsets = get_onsets_locations(threshold, energies, window_size)
+    
+    onsets = pick_best_onset_in_epsilon(onsets, epsilon)
 
     plot_onsets(input_signal, sr, onsets)
 
     return onsets
 
 if __name__ == "__main__":
-    query_name = "wlazlKotekNucenie5s"
+    query_name = "SzlaDzieweczkaA"
 
     onsets = short_term_energy(query_name)

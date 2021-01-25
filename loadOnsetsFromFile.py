@@ -1,3 +1,5 @@
+import markThePlot as mtp
+import EnvelopeMatchFilter as enf
 
 def findInTheFile(name):
     with open('Onsets.txt', 'r') as file:
@@ -6,7 +8,16 @@ def findInTheFile(name):
             # For each line, check if line contains the string
             if name in line:
                 return line
-    return ''
+    file.close()
+    print("No onset data avaliable for this file")
+    print("To mark it yourself write 1")
+    print("To calculate write 2")
+    inp = int(input())
+    if inp == 1: 
+        mtp.markOnsetsOnThePlot(name)
+        return findInTheFile(name)
+    else:
+        return ''
 
 def loadOnsetData(line):
     # last two caracters from line are ';/n' so we dont need them
@@ -16,11 +27,19 @@ def loadOnsetData(line):
     onsets = list(map(int, onsets))
     return onsets
 
-# name is just name of the file, without the .wav extension
-onsets = findInTheFile(name) 
-if onsets != '' :  
-    onsets = loadOnsetData(onsets)
-else:
-    # calculate onsets with Envelope Match filter
-    onsets = enf.get_onsets_locations(input_signal, window_size, threshold)
-    onsets = enf.pick_best_onset_in_epsilon(onsets, 4000)
+def loadOnsetFromFile(name):
+    onsets = findInTheFile(name)
+    if onsets != '':
+        return loadOnsetData(onsets)
+    else: return ''
+
+
+if __name__ == "__main__":    
+    # name is just name of the file, without the .wav extension
+    name = "GdySlicznaPannaK"
+    onsets = findInTheFile(name) 
+    if onsets != '' :  
+        onsets = loadOnsetData(onsets)
+    else:
+        # calculate onsets with Envelope Match filter
+        onsets = enf.envelope_match_filter(name)
