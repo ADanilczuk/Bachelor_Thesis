@@ -7,7 +7,7 @@ from scipy.fftpack import fft
 import librosa
 
 import loadOnsetsFromFile as loff
-import EnvelopeMatchFilter as enf
+import envelopeMatchFilter as enf
 import SaveDataInTxt as sd
 
 import math
@@ -21,6 +21,8 @@ A4 = 440
 C0 = A4*pow(2, -4.75)
 noteName = ['C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#', 'A', 'A#', 'B']
     
+# mainPath = "/Users/klaudiuszek/Desktop/Licencjat/Data/" 
+mainPath = "C:/Alusia/Studia/Praca Dyplomowa/data/Testy/"
 
 def pitch2Note(freq):
     h = round(12*log2(freq/C0))
@@ -41,7 +43,7 @@ def findMinIndex(fData):
 def calculatePitchExtraction(name):
     
     threshold = 5
-    song =  "C:/Alusia/Studia/Praca Dyplomowa/data/"+name +".wav"
+    song =  mainPath + name +".wav"
 
     # sr- sample rate - how many samples is recorded per second
     input_signal, sr = librosa.load(song)
@@ -49,7 +51,7 @@ def calculatePitchExtraction(name):
 
     onsets = loff.loadOnsetFromFile(name)
     if onsets == '' :  
-        print("no onsets")
+        # print("no onsets")
         onsets = enf.get_onsets_locations(input_signal, window_size, threshold)
         onsets = enf.pick_best_onset_in_epsilon(onsets, 4000)
     time = np.arange(0, len(input_signal)) / sr
@@ -80,18 +82,16 @@ def calculatePitchExtraction(name):
         
         i += 1
     
-    
     noteSet = []
     for n in fundamentalFrequencies:
         noteSet.append(pitch2Note(n))
     
-
-    # sd.saveInTxt('freqs', name+'-A', fundamentalFrequencies, '\t')
+    # sd.saveInTxt('notes', name, noteSet, '\t')
     return (fundamentalFrequencies , noteSet)
 
 if __name__ == "__main__": 
     # calculatePitchExtraction('nucenie2')
-    (propsedFreqs, proposedNotes) = calculatePitchExtraction("kotek2")
+    (propsedFreqs, proposedNotes) = calculatePitchExtraction("kotek1")
     print("Fundamental Frequencies", propsedFreqs)
     print("noteSet", proposedNotes)
     # calculatePitchExtraction("gdySlicznaPannaS2")

@@ -1,7 +1,7 @@
 from matplotlib import pyplot as plt
 import librosa
 
-import EnvelopeMatchFilter as enf
+import envelopeMatchFilter as enf
 import math
 import numpy as np
 import librosa as lba
@@ -12,6 +12,10 @@ input_signal = None
 time = None
 fig = None
 y = None
+
+# mainPath = "/Users/klaudiuszek/Desktop/Licencjat/Data/" 
+mainPath = "C:/Alusia/Studia/Praca Dyplomowa/data/Testy/"
+
 
 def onclick(event):
     global Onsets, fig
@@ -25,7 +29,7 @@ def onclick(event):
 
 def markOnsetsOnThePlot(name):
     global input_signal, time, fig, y
-    song =  "C:/Alusia/Studia/Praca Dyplomowa/data/"+name +".wav"
+    song =  mainPath+name +".wav"
     
     input_signal, sr = librosa.load(song)
     time = np.arange(0, len(input_signal)) / sr
@@ -47,4 +51,5 @@ def markOnsetsOnThePlot(name):
     print(Onsets)
 
 if __name__ == "__main__":  
-    markOnsetsOnThePlot("piano3")
+    # markOnsetsOnThePlot("piano3")
+    markOnsetsOnThePlot("KawalekPodlogiA")
