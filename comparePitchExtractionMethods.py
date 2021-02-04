@@ -70,15 +70,15 @@ def comparePitchResults(name, version):
         print("AMDFNotes", AMDFNotes)
         print("Finally choosen", choosenNotes)
 
-    space = ' & '
-    fileName = 'NoteCalculations'
-    sd.saveInTxt(fileName, name, ACFNotes, space, 'AF')
-    sd.saveInTxt(fileName, '', AMDFNotes, space, 'AMDF')
-    sd.saveInTxt(fileName, '', CepstralNotes, space, 'C1')
-    sd.saveInTxt(fileName, '', CepstralNotes2, space, 'C2')
-    sd.saveInTxt(fileName, '', HarmonicNotes, space, 'HP')
-    sd.saveInTxt(fileName, '', ThirdNotes, space, '3BF')
-    sd.saveInTxt(fileName, '', choosenNotes, space, 'Wynik')
+    # space = ' & '
+    # fileName = 'NoteCalculations'
+    # sd.saveInTxt(fileName, name, ACFNotes, space, 'AF')
+    # sd.saveInTxt(fileName, '', AMDFNotes, space, 'AMDF')
+    # sd.saveInTxt(fileName, '', CepstralNotes, space, 'C1')
+    # sd.saveInTxt(fileName, '', CepstralNotes2, space, 'C2')
+    # sd.saveInTxt(fileName, '', HarmonicNotes, space, 'HP')
+    # sd.saveInTxt(fileName, '', ThirdNotes, space, '3BF')
+    # sd.saveInTxt(fileName, '', choosenNotes, space, 'Wynik')
     
 def chooseNotesFromArgs(ThirdNotes, CepstralNotes, CepstralNotes2, HarmonicNotes):
     preferedFreqs = HarmonicNotes
@@ -90,7 +90,7 @@ def chooseNotesFromArgs(ThirdNotes, CepstralNotes, CepstralNotes2, HarmonicNotes
         # nC- noteCandidates
         nC = [CepstralNotes[i], CepstralNotes2[i], ThirdNotes[i], HarmonicNotes[i]]
         b = Counter(nC)
-        n = max(b)
+        n = b.most_common()[0][0]
         if b[n] == 1: 
             n = preferedNotes[i] 
         elif (b[n] == 2 and b[preferedNotes[i]] == 2 ):  
@@ -118,7 +118,7 @@ def chooseNotes(name, version=0):
         # nC- noteCandidates
         nC = [CepstralNotes[i], CepstralNotes2[i], ThirdNotes[i], HarmonicNotes[i]]
         b = Counter(nC)
-        n = max(b)
+        n = b.most_common()[0][0]
         if b[n] == 1: 
             n = preferedNotes[i] 
         elif (b[n] == 2 and b[preferedNotes[i]] == 2 ):  
@@ -141,7 +141,9 @@ if __name__ == "__main__":
     #     comparePitchResults(name, 1)
     #     print("ok", name)
     
-    chooseNotes("WlazlKotekA", 1)
+    comparePitchResults("GdySlicznaPannaK", 1)
+   
+    # chooseNotes("WlazlKotekA", 1)
 
     # for name in nazwy:
     #     chooseNotes(name, 1)
