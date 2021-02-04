@@ -3,7 +3,7 @@ import linearScaling
 import loadFreqsFromFile as leff
 import loadOnsetsFromFile as loff
 import os
-import SaveDataInTxt as sd
+import saveDataInTxt as sd
 
 import time
 from collections import Counter

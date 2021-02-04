@@ -4,7 +4,7 @@ import harmonicProduct
 import cepstralMethod
 import autocorrelationFunction
 import averageMagnitudeDifferenceFunction
-import SaveDataInTxt as sd
+import saveDataInTxt as sd
 
 import time
 from collections import Counter
