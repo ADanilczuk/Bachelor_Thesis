@@ -17,7 +17,9 @@ Pliki umieszczone w repozytorium służą do prezentacji i przetestowania dział
 11. comparePitchExtractionMethods.py
 12. dynamicProgramming.py
 13. linearScaling.py
+
 Pomocnicze:
+
 14. loadOnsetsFromFile.py
 15. loadFreqsFromFile.py
 
