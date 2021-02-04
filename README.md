@@ -4,11 +4,11 @@
 Pliki umieszczone w repozytorium służą do prezentacji i przetestowania działania algorytmów omówionych w pracy "Implementacja i omówienie algorytmów analizujących dźwięki z perspektywy porównywania utworów". W skład repozytorium wchodzą programy obliczające wyniki algorytmów zatytułowanymi ich nazwami oraz pliki pomocnicze służące do szybszej obsługi programów, przekazywania danych z dokumentów txt oraz generowania dokumentów prezentujących ich działanie.
 
 #### Zaprezentowane pliki to zgodnie ze strukturą pracy:
-1. magnitudeMethod.py
-2. shortTermEnergyMethod.py
-3. surfMethod.py
-4. envelopeMatchFilter.py
-5. markThePlot.py
+1. magnitudeMethod.py <br/>
+2. shortTermEnergyMethod.py <br/>
+3. surfMethod.py <br/>
+4. envelopeMatchFilter.py <br/>
+5. markThePlot.py <br/>
 
     Do ich uruchomienia potrzeba nazwy nagrania w pliku wav podanej bez rozszerzenia. W pierwszych czterech można zmieniać wartości stałych (wielkość okna, próg oraz epsilon) a ich działanie jest automatyczne. Ostatnia Daje możliwość samodzielnego zaznaczenia pożądanych początków dźwięków (ang. onsets), następnie zapisuje ich wynik do pliku Onsets.txt w formacie: nazwa_piosenki kolejne_indeksy_wartości_w_których_zaznaczono_onset.
 6. autocorrelationFunction.py
