@@ -1,0 +1,64 @@
+SzlaDzieweczkaA
+AF & A#3 & E4 & A4 & G4 & F4 & E4 & F4 & D4 & C4 & C4 & A3 & A#3 & C4 & G#4 & E4 & C4 & A#3 & A#3 & G3 & A3 & A#3 & F#4 & D#4 & C#4 & B3 & C4 & G#4 & F#4 & E4 \ 
+AMDF & A#3 & E4 & A4 & G4 & F4 & E4 & F4 & D4 & C4 & C4 & A3 & A#3 & C4 & G#4 & E4 & C4 & A#3 & A#3 & G#3 & A3 & A#3 & F#4 & D#4 & C#4 & B3 & C4 & G#4 & F#4 & E4 \ 
+C1 & A#3 & F4 & G#4 & G4 & F4 & E4 & F4 & D#4 & C4 & C4 & G#3 & A#3 & C4 & G#4 & E4 & C4 & A#3 & A#3 & D5 & A3 & A#3 & F4 & D#4 & C#4 & B3 & C4 & G4 & F#4 & E4 \ 
+C2 & A#3 & F4 & A3 & G4 & F4 & E4 & F4 & D#4 & C4 & C4 & A3 & A#3 & C4 & G#4 & E4 & C4 & A#3 & A#3 & G#3 & A3 & A#3 & F#4 & D#4 & C#4 & B3 & C4 & G4 & F#4 & E4 \ 
+HP & A#3 & F4 & A4 & G4 & F4 & E4 & F4 & D4 & C3 & C4 & A3 & A#3 & C4 & G#4 & E4 & C4 & A#3 & A#3 & G3 & A3 & A#3 & F#4 & D#4 & C#4 & B3 & C4 & A4 & F#4 & E4 \ 
+3BF & B3 & F4 & A4 & G4 & F4 & F4 & F4 & D4 & C4 & C4 & A3 & A#3 & C4 & G#4 & E4 & C4 & A#3 & B3 & G4 & A3 & A#3 & F#4 & D#4 & C4 & C4 & C4 & G#4 & F#4 & E4 \ 
+Wynik & A#3 & F4 & A4 & G4 & F4 & E4 & F4 & D4 & C4 & C4 & A3 & A#3 & C4 & G#4 & E4 & C4 & A#3 & A#3 & G3 & A3 & A#3 & F#4 & D#4 & C#4 & B3 & C4 & G4 & F#4 & E4 \ 
+KawalekPodlogiA
+AF & G3 & G#3 & A3 & G3 & G3 & D#4 & D4 & G3 & G3 & G#3 & A3 & G3 & G3 & D4 & D4 & C4 \ 
+AMDF & G#3 & G#3 & A3 & G#3 & G#3 & D#4 & D#4 & G#3 & G#3 & G#3 & A3 & G#3 & G#3 & D4 & D4 & C4 \ 
+C1 & A#4 & G#3 & C5 & G#3 & A#4 & D#4 & D4 & C5 & A#4 & G#3 & A#4 & C#5 & C5 & D#4 & D4 & C4 \ 
+C2 & A3 & G#3 & A3 & A3 & G#3 & D#4 & D4 & G3 & A3 & G#3 & G#3 & A3 & C4 & D4 & D4 & C4 \ 
+HP & G3 & G#2 & A3 & G3 & G3 & D#4 & D3 & G3 & G3 & G#3 & G#3 & G3 & G3 & D4 & D4 & B3 \ 
+3BF & G3 & G#4 & A#3 & G3 & G3 & D4 & A#3 & G3 & G3 & G#4 & A3 & G3 & G3 & D4 & D4 & C4 \ 
+Wynik & G3 & G#2 & A3 & G3 & G3 & D#4 & D4 & G3 & G3 & G#3 & G#3 & G3 & G3 & D4 & D4 & C4 \ 
+GdySlicznaPannaA
+AF & A#3 & C#4 & D#4 & E4 & E4 & F#4 & A4 & G#4 & F#4 & F#4 & E4 & B3 & C#4 & D#4 & E4 & E4 & F#4 & A4 & G#4 & F#4 & F#4 & F4 \ 
+AMDF & A#3 & C#4 & D#4 & E4 & E4 & F#4 & G#4 & G#4 & F#4 & F#4 & E4 & B3 & C#4 & D#4 & E4 & E4 & F#4 & A4 & G#4 & F#4 & F#4 & F4 \ 
+C1 & A#3 & C4 & D#4 & E4 & E4 & F#4 & G#4 & G#4 & F#4 & F#4 & E4 & B3 & C#4 & D#4 & E4 & E4 & F#4 & A4 & F#4 & F#4 & F#4 & F4 \ 
+C2 & A#3 & C4 & D#4 & E4 & E4 & F#4 & G#4 & G#4 & F#4 & F#4 & F4 & B3 & C#4 & E4 & E4 & F4 & F#4 & A4 & G4 & F#4 & F#4 & F4 \ 
+HP & A#2 & C#4 & D#2 & E4 & E4 & F#4 & A4 & G#4 & G4 & F#4 & F4 & B3 & C#4 & E4 & E4 & E4 & F#4 & A#4 & G#4 & G4 & F#4 & F4 \ 
+3BF & A#3 & C4 & D#4 & E4 & E4 & F4 & A4 & A4 & G4 & F#4 & F4 & B3 & D4 & D#4 & E4 & E4 & F#4 & A4 & G4 & G4 & G4 & E4 \ 
+Wynik & A#3 & C4 & D#4 & E4 & E4 & F#4 & A4 & G#4 & G4 & F#4 & F4 & B3 & C#4 & E4 & E4 & E4 & F#4 & A4 & G4 & G4 & F#4 & F4 \ 
+KawalekPodlogiA
+AF & G3 & G#3 & A3 & G3 & G3 & D#4 & D4 & G3 & G3 & G#3 & A3 & G3 & G3 & D4 & D4 & C4 \ 
+AMDF & G#3 & G#3 & A3 & G#3 & G#3 & D#4 & D#4 & G#3 & G#3 & G#3 & A3 & G#3 & G#3 & D4 & D4 & C4 \ 
+C1 & A#4 & G#3 & C5 & G#3 & A#4 & D#4 & D4 & C5 & A#4 & G#3 & A#4 & C#5 & C5 & D#4 & D4 & C4 \ 
+C2 & A3 & G#3 & A3 & A3 & G#3 & D#4 & D4 & G3 & A3 & G#3 & G#3 & A3 & C4 & D4 & D4 & C4 \ 
+HP & G3 & G#2 & A3 & G3 & G3 & D#4 & D3 & G3 & G3 & G#3 & G#3 & G3 & G3 & D4 & D4 & B3 \ 
+3BF & G3 & G#4 & A#3 & G3 & G3 & D4 & A#3 & G3 & G3 & G#4 & A3 & G3 & G3 & D4 & D4 & C4 \ 
+Wynik & G3 & G#2 & A3 & G3 & G3 & D#4 & D4 & G3 & G3 & G#3 & G#3 & G3 & G3 & D4 & D4 & C4 \ 
+GdySlicznaPannaK
+AF & A3 & B3 & C#4 & D4 & D4 & E4 & G4 & F#4 & E4 & E4 & D4 & A#3 & C4 & D4 & D#4 & D#4 & E4 & G4 & F#4 & E4 & E4 & D4 \ 
+AMDF & A3 & B3 & C#4 & D4 & D4 & E4 & G4 & F#4 & E4 & E4 & D4 & A#3 & C4 & D4 & D#4 & D#4 & D#4 & G4 & F#4 & E4 & E4 & D4 \ 
+C1 & A3 & B3 & C#4 & D4 & D4 & E4 & G4 & F#4 & E4 & E4 & C#4 & A3 & C4 & D4 & C#4 & D4 & E4 & F#4 & F#4 & E4 & E4 & C#4 \ 
+C2 & A3 & B3 & C#4 & D#4 & D4 & E4 & G4 & F#4 & E4 & E4 & D4 & A#3 & C4 & D4 & D#4 & D#4 & E4 & F#4 & F#4 & E4 & E4 & D4 \ 
+HP & A3 & B3 & C#4 & D4 & D4 & E4 & G4 & F#4 & E4 & E4 & D4 & A3 & C4 & D4 & D#4 & D#4 & E4 & G4 & G4 & E4 & E4 & D4 \ 
+3BF & A3 & B3 & C#4 & D4 & D4 & D#4 & G4 & F#4 & E4 & E4 & D4 & A#3 & C4 & D4 & D#4 & D#4 & E4 & F#4 & F4 & E4 & E4 & D4 \ 
+Wynik & A3 & B3 & C#4 & D4 & D4 & E4 & G4 & F#4 & E4 & E4 & D4 & A3 & C4 & D4 & D#4 & D#4 & E4 & G4 & G4 & E4 & E4 & D4 \ 
+KawalekPodlogiK
+AF & G#3 & A3 & A#3 & G3 & G#3 & D#4 & D4 & G#3 & G#3 & A3 & B3 & G#3 & G#3 & D#4 & D4 \ 
+AMDF & G#3 & A3 & B3 & G#3 & G#3 & D#4 & D4 & G#3 & G#3 & A3 & B3 & G#3 & G#3 & D#4 & D4 \ 
+C1 & D5 & A3 & B3 & G3 & G3 & D#4 & D4 & G3 & G3 & A3 & A#3 & G3 & G3 & D#4 & D4 \ 
+C2 & A3 & A3 & B3 & G3 & G3 & D#4 & D4 & G#3 & G3 & A3 & B3 & G3 & G#3 & D#4 & D#4 \ 
+HP & G3 & A3 & A#3 & G3 & G3 & D#4 & D4 & G#3 & G3 & A3 & B3 & G#3 & G#3 & E4 & D4 \ 
+3BF & G#3 & A4 & A#3 & G3 & G3 & A#5 & D4 & G#3 & G#3 & A#3 & B3 & G3 & G#3 & E4 & D#4 \ 
+Wynik & G3 & A3 & A#3 & G3 & G3 & D#4 & D4 & G#3 & G3 & A3 & B3 & G3 & G#3 & E4 & D4 \ 
+SzlaDzieweczkaK
+AF & B3 & E4 & G#4 & F4 & E4 & D#4 & E4 & C4 & B3 & B3 & A3 & A#3 & C4 & A4 & F4 & A#3 & A#3 & G3 & A3 & A#3 & F#4 & D#4 & B3 & C4 & A3 & A#3 & B3 \ 
+AMDF & B3 & E4 & G#4 & F4 & E4 & D#4 & F4 & C4 & B3 & B3 & A3 & A#3 & C4 & A4 & E4 & A#3 & A#3 & G#3 & A3 & A#3 & F#4 & D#4 & B3 & B3 & A3 & A#3 & B3 \ 
+C1 & B3 & E4 & G#4 & F4 & E4 & D#4 & E4 & C4 & B3 & B3 & A3 & A#3 & C4 & A4 & E4 & A3 & A#3 & C#5 & A3 & A#3 & F4 & D#4 & B3 & B3 & A3 & A#3 & B3 \ 
+C2 & B3 & E4 & G#4 & F4 & E4 & D#4 & F4 & C4 & B3 & C4 & A3 & A#3 & C4 & A4 & F4 & A#3 & A#3 & G#3 & A3 & A#3 & F#4 & D#4 & B3 & C4 & A3 & A#3 & B3 \ 
+HP & B3 & E4 & G#4 & F#4 & E4 & D#4 & F4 & C4 & B3 & B3 & A3 & A#3 & C4 & A4 & E4 & A#3 & A#3 & F#3 & A3 & A#3 & F#4 & D#4 & B3 & B3 & A3 & A#3 & B3 \ 
+3BF & B3 & E4 & G#4 & F4 & E4 & D#4 & D4 & C#4 & B4 & C4 & A3 & A#3 & C4 & A#4 & E4 & A#3 & A#4 & G3 & A3 & A#3 & G4 & D#4 & B3 & B3 & A4 & B3 & B3 \ 
+Wynik & B3 & E4 & G#4 & F4 & E4 & D#4 & F4 & C4 & B3 & B3 & A3 & A#3 & C4 & A4 & E4 & A#3 & A#3 & F#3 & A3 & A#3 & F#4 & D#4 & B3 & B3 & A3 & A#3 & B3 \ 
+SzlaDzieweczkaA
+AF & A#3 & E4 & A4 & G4 & F4 & E4 & F4 & D4 & C4 & C4 & A3 & A#3 & C4 & G#4 & E4 & C4 & A#3 & A#3 & G3 & A3 & A#3 & F#4 & D#4 & C#4 & B3 & C4 & G#4 & F#4 & E4 \ 
+AMDF & A#3 & E4 & A4 & G4 & F4 & E4 & F4 & D4 & C4 & C4 & A3 & A#3 & C4 & G#4 & E4 & C4 & A#3 & A#3 & G#3 & A3 & A#3 & F#4 & D#4 & C#4 & B3 & C4 & G#4 & F#4 & E4 \ 
+C1 & A#3 & F4 & G#4 & G4 & F4 & E4 & F4 & D#4 & C4 & C4 & G#3 & A#3 & C4 & G#4 & E4 & C4 & A#3 & A#3 & D5 & A3 & A#3 & F4 & D#4 & C#4 & B3 & C4 & G4 & F#4 & E4 \ 
+C2 & A#3 & F4 & A3 & G4 & F4 & E4 & F4 & D#4 & C4 & C4 & A3 & A#3 & C4 & G#4 & E4 & C4 & A#3 & A#3 & G#3 & A3 & A#3 & F#4 & D#4 & C#4 & B3 & C4 & G4 & F#4 & E4 \ 
+HP & A#3 & F4 & A4 & G4 & F4 & E4 & F4 & D4 & C3 & C4 & A3 & A#3 & C4 & G#4 & E4 & C4 & A#3 & A#3 & G3 & A3 & A#3 & F#4 & D#4 & C#4 & B3 & C4 & A4 & F#4 & E4 \ 
+3BF & B3 & F4 & A4 & G4 & F4 & F4 & F4 & D4 & C4 & C4 & A3 & A#3 & C4 & G#4 & E4 & C4 & A#3 & B3 & G4 & A3 & A#3 & F#4 & D#4 & C4 & C4 & C4 & G#4 & F#4 & E4 \ 
+Wynik & A#3 & F4 & A4 & G4 & F4 & E4 & F4 & D4 & C4 & C4 & A3 & A#3 & C4 & G#4 & E4 & C4 & A#3 & A#3 & G3 & A3 & A#3 & F#4 & D#4 & C#4 & B3 & C4 & G4 & F#4 & E4 \ 

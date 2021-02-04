@@ -1,0 +1,90 @@
+SzlaDzieweczkaK
+GdySlicznaPanna1.mid & 16 & 0.5 \ 
+GdySlicznaPanna2.mid & 5 & 0.5 \ 
+KawalekPodlogi1.mid & 6 & 0.5 \ 
+KawalekPodlogi2.mid & 4 & 1.5 \ 
+SzlaDzieweczka1.mid & 15 & 0.5 \ 
+SzlaDzieweczka2.mid & 10 & 0.5 \ 
+SzlaDzieweczkaA
+GdySlicznaPanna1.mid & 15 & 0.5 \ 
+GdySlicznaPanna2.mid & 3 & 0.75 \ 
+KawalekPodlogi1.mid & 4 & 0.5 \ 
+KawalekPodlogi2.mid & 6 & 0.75 \ 
+SzlaDzieweczka1.mid & 7 & 0.5 \ 
+SzlaDzieweczka2.mid & 12 & 0.5 \ 
+KawalekPodlogiA
+GdySlicznaPanna1.mid & 6 & 1.0 \ 
+GdySlicznaPanna2.mid & 1 & 0.5 \ 
+KawalekPodlogi1.mid & 5 & 0.5 \ 
+KawalekPodlogi2.mid & 9 & 0.75 \ 
+SzlaDzieweczka1.mid & 3 & 1.25 \ 
+SzlaDzieweczka2.mid & 7 & 1.25 \ 
+KawalekPodlogiK
+GdySlicznaPanna1.mid & 5 & 0.5 \ 
+GdySlicznaPanna2.mid & 1 & 0.5 \ 
+KawalekPodlogi1.mid & 6 & 0.5 \ 
+KawalekPodlogi2.mid & 7 & 0.75 \ 
+SzlaDzieweczka1.mid & 5 & 0.5 \ 
+SzlaDzieweczka2.mid & 6 & 1.25 \ 
+GdySlicznaPannaK
+GdySlicznaPanna1.mid & 14 & 0.5 \ 
+GdySlicznaPanna2.mid & 5 & 0.75 \ 
+KawalekPodlogi1.mid & 4 & 0.5 \ 
+KawalekPodlogi2.mid & 4 & 0.75 \ 
+SzlaDzieweczka1.mid & 4 & 0.5 \ 
+SzlaDzieweczka2.mid & 12 & 0.5 \ 
+GdySlicznaPannaA
+GdySlicznaPanna1.mid & 18 & 1.0 \ 
+GdySlicznaPanna2.mid & 4 & 1.0 \ 
+KawalekPodlogi1.mid & 4 & 1.0 \ 
+KawalekPodlogi2.mid & 4 & 1.25 \ 
+SzlaDzieweczka1.mid & 5 & 0.5 \ 
+SzlaDzieweczka2.mid & 11 & 0.5 \ 
+KawalekPodlogiK
+GdySlicznaPanna1.mid & 5 & 0.5 \ 
+GdySlicznaPanna1.mp3_vocals.midi & 4 & 1.0 \ 
+GdySlicznaPanna2.mid & 1 & 0.5 \ 
+KawalekPodlogi1.mid & 6 & 0.5 \ 
+KawalekPodlogi2.mid & 7 & 0.75 \ 
+SzlaDzieweczka1.mid & 5 & 0.5 \ 
+SzlaDzieweczka2.mid & 6 & 1.25 \ 
+SzlaDzieweczkaK
+GdySlicznaPanna1.mid & 16 & 0.5 \ 
+GdySlicznaPanna1.mp3_vocals.midi & 10 & 1.25 \ 
+GdySlicznaPanna2.mid & 5 & 0.5 \ 
+KawalekPodlogi1.mid & 6 & 0.5 \ 
+KawalekPodlogi2.mid & 4 & 1.5 \ 
+SzlaDzieweczka1.mid & 15 & 0.5 \ 
+SzlaDzieweczka2.mid & 10 & 0.5 \ 
+GdySlicznaPannaA
+GdySlicznaPanna1.mid & 18 & 1.0 \ 
+GdySlicznaPanna1.mp3_vocals.midi & 10 & 1.0 \ 
+GdySlicznaPanna2.mid & 4 & 1.0 \ 
+KawalekPodlogi1.mid & 4 & 1.0 \ 
+KawalekPodlogi2.mid & 4 & 1.25 \ 
+SzlaDzieweczka1.mid & 5 & 0.5 \ 
+SzlaDzieweczka2.mid & 11 & 0.5 \ 
+GdySlicznaPannaK
+GdySlicznaPanna1.mid & 14 & 0.5 \ 
+GdySlicznaPanna1.mp3_vocals.midi & 9 & 0.5 \ 
+GdySlicznaPanna2.mid & 5 & 0.75 \ 
+KawalekPodlogi1.mid & 4 & 0.5 \ 
+KawalekPodlogi2.mid & 4 & 0.75 \ 
+SzlaDzieweczka1.mid & 4 & 0.5 \ 
+SzlaDzieweczka2.mid & 12 & 0.5 \ 
+SzlaDzieweczkaA
+GdySlicznaPanna1.mid & 15 & 0.5 \ 
+GdySlicznaPanna1.mp3_vocals.midi & 9 & 0.75 \ 
+GdySlicznaPanna2.mid & 3 & 0.75 \ 
+KawalekPodlogi1.mid & 4 & 0.5 \ 
+KawalekPodlogi2.mid & 6 & 0.75 \ 
+SzlaDzieweczka1.mid & 7 & 0.5 \ 
+SzlaDzieweczka2.mid & 12 & 0.5 \ 
+KawalekPodlogiA
+GdySlicznaPanna1.mid & 6 & 1.0 \ 
+GdySlicznaPanna1.mp3_vocals.midi & 5 & 0.75 \ 
+GdySlicznaPanna2.mid & 1 & 0.5 \ 
+KawalekPodlogi1.mid & 5 & 0.5 \ 
+KawalekPodlogi2.mid & 9 & 0.75 \ 
+SzlaDzieweczka1.mid & 3 & 1.25 \ 
+SzlaDzieweczka2.mid & 7 & 1.25 \ 
