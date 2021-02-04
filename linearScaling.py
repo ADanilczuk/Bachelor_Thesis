@@ -166,7 +166,7 @@ if __name__ == "__main__":
     # (freqsInput, _) = cpem.chooseNotes(name)
     timesInput = loff.loadOnsetFromFile(name)
     freqsInput = leff.loadFreqsFromFile(name)
-    # freqsInput = [233.08, 261.63, 293.66, 311.13, 311.13, 349.23, 415.3, 392.0, 349.23, 349.23, 311.13]
+
     _, sr = librosa.load(song)
     timesInput = list(map(lambda x: x/sr, timesInput)) 
     linearScaling(freqsInput, "GdySlicznaPanna1.mid", timesInput)

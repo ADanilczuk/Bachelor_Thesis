@@ -9,7 +9,6 @@ import numpy as np
 import librosa 
 import scipy.io.wavfile as scp
 
-import compareOnsetDetectionMethods as cod
 from scipy import signal
 
 # mainPath = "/Users/klaudiuszek/Desktop/Licencjat/Data/" 
@@ -126,7 +125,6 @@ def showSong(name):
     return onsets
 
 if __name__ == "__main__": 
-    # onsets = showSong('wlazlKotekNucenie5sGlosne')'
 
     windowSize = 1000
     threshold = 0.01
