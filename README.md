@@ -1,5 +1,5 @@
 ## Praca dyplomowa
-#### Uniwersytet Wrocławski \n Instytut informatyki \\ Alicja Danilczuk i Klaudia Osowska \\ Luty 2021
+#### Uniwersytet Wrocławski <br/> Instytut informatyki <br/> Alicja Danilczuk i Klaudia Osowska <br/> Luty 2021
 
 Pliki umieszczone w repozytorium służą do prezentacji i przetestowania działania algorytmów omówionych w pracy "Implementacja i omówienie algorytmów analizujących dźwięki z perspektywy porównywania utworów". W skład repozytorium wchodzą programy obliczające wyniki algorytmów zatytułowanymi ich nazwami oraz pliki pomocnicze służące do szybszej obsługi programów, przekazywania danych z dokumentów txt oraz generowania dokumentów prezentujących ich działanie.
 
