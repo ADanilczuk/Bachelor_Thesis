@@ -17,6 +17,9 @@ Pliki umieszczone w repozytorium służą do prezentacji i przetestowania dział
 11. comparePitchExtractionMethods.py
 12. dynamicProgramming.py
 13. linearScaling.py
+Pomocnicze:
+14. loadOnsetsFromFile.py
+15. loadFreqsFromFile.py
 
 
 Ad. 1-5. Do ich uruchomienia potrzeba nazwy nagrania w pliku wav podanej bez rozszerzenia. W pierwszych czterech można zmieniać wartości stałych (wielkość okna, próg oraz epsilon) a ich działanie jest automatyczne. Ostatnia Daje możliwość samodzielnego zaznaczenia pożądanych początków dźwięków (ang. onsets), następnie zapisuje ich wynik do pliku Onsets.txt w formacie: nazwa_piosenki kolejne_indeksy_wartości_w_których_zaznaczono_onset.
